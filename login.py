@@ -80,7 +80,7 @@ def show_menu():
     elif selected == "Usuários" and st.session_state.selected_table == "USER_ADMIN":
         exec(open("user.py", encoding='utf-8').read(), globals())
     elif selected == "Banco de Dados" and st.session_state.selected_table == "USER_ADMIN":
-        exec(open("editar_excluir.py").read())
+        exec(open("home.py").read())
     elif selected == "Configuração Backup" and st.session_state.selected_table == "USER_ADMIN":
         exec(open("configuracao_backup.py",encoding='utf-8').read(), globals())
     elif selected == "Logout":
